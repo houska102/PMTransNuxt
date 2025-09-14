@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_items",
+  "info": {
+    "singularName": "menu-item",
+    "pluralName": "menu-items",
+    "displayName": "MenuItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "text",
+      "required": true
+    },
+    "mobileOnly": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    },
+    "order": {
+      "type": "integer"
+    },
+    "identifier": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
